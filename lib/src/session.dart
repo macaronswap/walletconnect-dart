@@ -179,6 +179,7 @@ class WCSession {
       RpcMethods.ETH_SEND_RAW_TRANSACTION,
       RpcMethods.SIGN_MESSAGE,
       "wallet_addEthereumChain",
+      "wallet_switchEthereumChain"
     ];
     if (call is RpcRequest && methodList.contains(call.method)) {
       launch("wc:");
